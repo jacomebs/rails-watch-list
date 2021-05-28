@@ -6,6 +6,7 @@
 
         <%= simple_form_for @list do |f| %>
           <%= f.input :name, placeholder: 'Drama' %>
+          <%= f.input :cover %>
           <%= f.submit class: 'btn btn-primary' %> or
           <%= link_to 'Cancel', lists_path, class: 'text-danger' %>
         <% end %>
